@@ -1,6 +1,6 @@
 <?php
 	require 'TwistOAuth.phar';
-	require_once (dirname(__FILE__).'/twitterkey.php.bak');
+	require_once (dirname(__FILE__).'/twitterkey.php');
 	require_once (dirname(__FILE__).'/tweet.php');
 
 	function h($str){
