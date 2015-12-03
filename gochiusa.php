@@ -1,8 +1,7 @@
 <?php
 	require 'TwistOAuth.phar';
-	require_once (dirname(__FILE__).'/twitterkey.php');
+	require_once (dirname(__FILE__).'/twitterkey.php.bak');
 	require_once (dirname(__FILE__).'/tweet.php');
-	$hashtag = "gochiusa";
 
 	function h($str){
 		return htmlspecialchars($str,ENT_QUOTES,'UTF-8');
@@ -98,6 +97,9 @@
 					print "command:\n    h このヘルプを表示する\n    tweet ツイートする画面へ移行する
     set ハッシュタグを設定する\n    temp テンプレートツイート画面へ移行する\n    exit gochiusa_tweetを終了する\n";
 						break;
+				case "exit":
+					print "finish gochiusaTweet\n";
+					break;
 				default:
 					# code...
 					print $stdin.": Command not found.\n";
