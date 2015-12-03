@@ -15,7 +15,7 @@ $ php gochiusa.php
 ```
 
 ## Detail  
-* free_tweet  
+* tweet  
 You can tweet free_tweet with hashtag.  
 Default hashtag is #goshiusa.  
 * set  
